@@ -1,0 +1,2 @@
+# hashoratech
+A NEW COMPANY
