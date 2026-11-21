@@ -2731,3 +2731,152 @@ img {
     max-width: 100%;
   }
 }
+
+/* =========================
+   HOMEPAGE SPACING FIX
+========================= */
+
+/* Compact statistics section */
+.numbers-section {
+  padding: 55px 8%;
+  min-height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,.08);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.number-item {
+  padding: 20px;
+}
+
+.number-item h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #d5ff35;
+  margin: 0 0 10px;
+}
+
+.number-item p {
+  color: #aaa;
+  font-size: .75rem;
+  letter-spacing: 2px;
+}
+
+/* Better section spacing */
+.home-intro {
+  padding: 90px 8%;
+}
+
+.home-services,
+.home-projects,
+.home-process {
+  padding: 90px 8%;
+}
+
+.section-heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 25px;
+  margin: 25px 0 40px;
+}
+
+.home-services h2,
+.home-projects h2,
+.home-process h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.08;
+}
+
+.home-services h2 span,
+.home-projects h2 span,
+.home-process h2 span {
+  color: #d5ff35;
+}
+
+/* Services cards */
+.home-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.home-service-card {
+  position: relative;
+  min-height: 260px;
+  padding: 28px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 18px;
+  background: #141414;
+  color: white;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.home-service-card:hover {
+  transform: translateY(-7px);
+  border-color: #d5ff35;
+  background: #1b1d16;
+}
+
+.home-service-card > span:first-child {
+  color: #aaa;
+  font-size: .7rem;
+  letter-spacing: 2px;
+}
+
+.service-symbol {
+  color: #d5ff35;
+  font-size: 2rem;
+  margin: 25px 0;
+}
+
+.home-service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.home-service-card p {
+  color: #999;
+  line-height: 1.7;
+}
+
+.card-arrow {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #d5ff35;
+}
+
+/* Responsive layout */
+@media(max-width: 800px) {
+  .numbers-section {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .home-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 550px) {
+  .home-intro,
+  .home-services,
+  .home-projects,
+  .home-process {
+    padding: 65px 6%;
+  }
+
+  .home-service-grid {
+    grid-template-columns: 1fr;
+  }
+}
