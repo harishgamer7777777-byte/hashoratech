@@ -4,156 +4,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover the vision, mission and founder behind HASHORATECH.">
+  <meta name="description" content="Meet the founder of HASHORATECH and discover our creative vision.">
   <title>About Us | HASHORATECH</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .founder-photo {
+      width: 100%;
+      max-width: 430px;
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      border-radius: 22px;
+      border: 1px solid rgba(213,255,53,.35);
+      background: #151515;
+    }
+
+    .founder-photo img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center 35%;
+    }
+  </style>
 </head>
+
 <body>
 
 <header class="site-header">
-  <a class="logo" href="index.html">HASHORA<span>TECH</span></a>
+  <a href="index.html" class="logo">HASHORA<span>TECH.</span></a>
 
-  <button class="menu-toggle" id="menuToggle"
-    aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
 
   <nav class="site-nav" id="siteNav">
     <a href="index.html">Home</a>
-    <a class="active" href="about.html">About</a>
+    <a href="about.html" class="active">About</a>
     <a href="service.html">Services</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="pricing.html">Pricing</a>
-    <a class="nav-cta" href="contact.html">Work with us ↗</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
 
   <section class="about-hero">
-    <p class="eyebrow">THE STORY BEHIND THE BRAND / 01</p>
-    <h1>We believe in<br><span>what's possible.</span></h1>
+    <div class="section-tag">WHO WE ARE</div>
+    <h1>Ideas become<br><span>experiences.</span></h1>
     <p>
-      A creative vision powered by curiosity, design
-      and technology. Welcome to HASHORATECH.
+      We combine creativity, technology and innovation to build
+      meaningful digital experiences for businesses and individuals.
     </p>
-    <a href="#our-story" class="text-link">DISCOVER OUR STORY ↓</a>
   </section>
 
-  <section class="about-story" id="our-story">
-    <div>
-      <p class="eyebrow">02 / OUR STORY</p>
-    </div>
-    <div>
-      <h2>Technology is the tool.<br><span>Ideas are the beginning.</span></h2>
-      <p>
-        HASHORATECH is a digital creative brand built around
-        the belief that ambitious ideas deserve thoughtful
-        design and meaningful technology.
-      </p>
-      <p>
-        We work across website development, branding, graphic
-        design, AI-powered experiences and custom digital
-        solutions. Our goal is to turn concepts into
-        experiences people can actually use.
-      </p>
-    </div>
-  </section>
-
-  <section class="about-belief">
-    <p class="eyebrow">03 / OUR PHILOSOPHY</p>
-    <h2>Don't just follow<br>the digital world.<br><span>Shape what's next.</span></h2>
+  <section class="about-story">
+    <div class="section-tag">OUR STORY</div>
+    <h2>Built on curiosity.<br><span>Driven by innovation.</span></h2>
+    <p>
+      HASHORATECH is a digital creative initiative focused on website
+      development, branding, graphic design and AI-powered solutions.
+      Our goal is to turn ideas into digital products that look
+      impressive and work effectively.
+    </p>
   </section>
 
   <section class="about-values">
-    <p class="eyebrow">04 / WHAT DRIVES US</p>
-    <h2>Our core values.</h2>
+    <div class="section-tag">WHAT DRIVES US</div>
+    <h2>More than just <span>design.</span></h2>
 
-    <div class="value-grid">
-      <article class="value-card">
+    <div class="values-grid">
+      <div class="value-card">
         <span>01</span>
-        <h3>Innovation</h3>
-        <p>We explore new possibilities and approach challenges with curiosity.</p>
-      </article>
-
-      <article class="value-card">
-        <span>02</span>
         <h3>Creativity</h3>
-        <p>We believe strong ideas deserve thoughtful and distinctive design.</p>
-      </article>
+        <p>Fresh ideas and thoughtful designs that help brands stand out.</p>
+      </div>
 
-      <article class="value-card">
+      <div class="value-card">
+        <span>02</span>
+        <h3>Technology</h3>
+        <p>Modern tools and smart solutions to solve real-world problems.</p>
+      </div>
+
+      <div class="value-card">
         <span>03</span>
-        <h3>Quality</h3>
-        <p>We focus on clarity, usability and attention to detail.</p>
-      </article>
-
-      <article class="value-card">
-        <span>04</span>
-        <h3>Progress</h3>
-        <p>We keep learning, improving and building for the future.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="about-mission">
-    <div class="mission-block">
-      <p class="eyebrow">OUR MISSION</p>
-      <h2>Make digital<br><span>ideas matter.</span></h2>
-      <p>
-        To create accessible, thoughtful and useful digital
-        experiences through design and technology.
-      </p>
-    </div>
-
-    <div class="mission-block">
-      <p class="eyebrow">OUR VISION</p>
-      <h2>Build beyond<br><span>the expected.</span></h2>
-      <p>
-        To grow into a creative technology brand known for
-        original thinking, quality work and meaningful innovation.
-      </p>
+        <h3>Innovation</h3>
+        <p>Always exploring better ways to create and build.</p>
+      </div>
     </div>
   </section>
 
   <section class="about-founder">
     <div class="founder-visual">
-      <div class="founder-monogram">H<span>.</span></div>
-      <p>FOUNDER / HASHORATECH</p>
+      <div class="founder-photo">
+        <img src="founder.jpg"
+             alt="S.T. Harishpandiyan, Founder of HASHORATECH">
+      </div>
     </div>
 
     <div class="founder-content">
-      <p class="eyebrow">05 / THE FOUNDER</p>
-      <h2>Meet the mind<br>behind the <span>vision.</span></h2>
+      <div class="section-tag">THE PERSON BEHIND THE VISION</div>
+      <h2>Meet the <span>Founder.</span></h2>
+
       <h3>S.T.Harishpandiyan</h3>
-      <p class="founder-role">Founder, HASHORATECH</p>
+      <p class="founder-role">Founder & Creator — HASHORATECH</p>
+
       <p>
-        Driven by an interest in technology, creativity and
-        building digital experiences, Harishpandiyan founded
-        HASHORATECH to bring ideas to life through design
-        and development.
+        Driven by a passion for technology, creativity and innovation,
+        Harishpandiyan started HASHORATECH with a vision to transform
+        ideas into meaningful digital experiences.
       </p>
-      <a href="contact.html" class="text-link">CONNECT WITH US ↗</a>
+
+      <p>
+        From websites and branding to AI-powered solutions, the focus
+        is on learning, experimenting and creating something valuable.
+      </p>
+
+      <a href="contact.html" class="primary-btn">Connect with us ↗</a>
     </div>
   </section>
 
-  <section class="about-end">
-    <p class="eyebrow">THE NEXT CHAPTER STARTS HERE</p>
-    <h2>Innovate.<br><span>Design. Dominate.</span></h2>
-    <a href="contact.html" class="lime-button">LET'S BUILD SOMETHING ↗</a>
+  <section class="about-cta">
+    <div class="section-tag">HAVE AN IDEA?</div>
+    <h2>Let's build something<br><span>extraordinary.</span></h2>
+    <a href="contact.html" class="primary-btn">Start a project ↗</a>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <a class="logo" href="index.html">HASHORA<span>TECH</span></a>
+  <a href="index.html" class="logo">HASHORA<span>TECH.</span></a>
   <p>Innovate. Design. Dominate.</p>
-  <div class="footer-nav">
-    <a href="index.html">Home</a>
-    <a href="service.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
-    <a href="terms.html">Terms</a>
-  </div>
-  <p>© <span id="year">2026</span> HASHORATECH. All rights reserved.</p>
+  <p>© <span id="year"></span> HASHORATECH. All rights reserved.</p>
+  <a href="terms.html">Terms & Conditions</a>
 </footer>
 
 <script src="script.js"></script>
