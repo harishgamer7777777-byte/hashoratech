@@ -2880,3 +2880,354 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================
+   HASHORATECH — PREMIUM COLOUR & ANIMATIONS
+========================================== */
+
+:root {
+  --neon-lime: #d5ff35;
+  --neon-purple: #a855f7;
+  --neon-blue: #38bdf8;
+  --neon-pink: #ff4ecd;
+  --neon-orange: #ff9d42;
+}
+
+/* Colourful animated background glow */
+body {
+  background:
+    radial-gradient(ellipse at 10% 15%, rgba(120,50,255,.10), transparent 35%),
+    radial-gradient(ellipse at 90% 40%, rgba(0,190,255,.07), transparent 35%),
+    radial-gradient(ellipse at 50% 90%, rgba(255,50,160,.06), transparent 40%),
+    #09090d;
+  color: #fff;
+}
+
+/* ==========================================
+   ALL HEADINGS — ENTRANCE ANIMATION
+========================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  animation: headingEntrance 1s cubic-bezier(.2,.8,.2,1) both;
+  transition:
+    color .4s ease,
+    text-shadow .4s ease,
+    transform .4s ease;
+}
+
+@keyframes headingEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Gradient colour for main headings */
+h1 span,
+h2 span,
+.home-founder-content h2 span {
+  background: linear-gradient(
+    90deg,
+    #d5ff35,
+    #38bdf8,
+    #a855f7,
+    #ff4ecd,
+    #d5ff35
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 6s linear infinite;
+}
+
+@keyframes gradientFlow {
+  to {
+    background-position: 300% center;
+  }
+}
+
+/* Heading hover glow */
+h2:hover,
+h3:hover {
+  text-shadow:
+    0 0 15px rgba(168,85,247,.25),
+    0 0 30px rgba(56,189,248,.15);
+}
+
+/* Animated heading underline */
+.section-tag {
+  display: inline-block;
+  position: relative;
+  color: var(--neon-lime);
+  letter-spacing: 2px;
+}
+
+.section-tag::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 45px;
+  height: 2px;
+  background: linear-gradient(90deg, #d5ff35, #a855f7);
+  animation: underlineGrow 1.2s ease both;
+}
+
+@keyframes underlineGrow {
+  from { width: 0; }
+  to { width: 45px; }
+}
+
+/* ==========================================
+   HERO HEADING SPECIAL EFFECT
+========================================== */
+
+.home-hero h1 {
+  animation: heroReveal 1.2s ease both;
+  text-shadow: 0 0 45px rgba(168,85,247,.13);
+}
+
+@keyframes heroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(45px) scale(.96);
+    letter-spacing: 5px;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    letter-spacing: normal;
+  }
+}
+
+/* ==========================================
+   COLOURFUL BUTTONS
+========================================== */
+
+.primary-btn,
+.contact-submit {
+  background: linear-gradient(110deg, #d5ff35, #a3ff78, #38bdf8);
+  background-size: 200% auto;
+  color: #080808;
+  border: none;
+  box-shadow: 0 5px 25px rgba(213,255,53,.12);
+  transition: all .4s ease;
+}
+
+.primary-btn:hover,
+.contact-submit:hover {
+  background-position: right center;
+  transform: translateY(-5px) scale(1.03);
+  box-shadow:
+    0 10px 35px rgba(56,189,248,.25),
+    0 0 20px rgba(213,255,53,.2);
+}
+
+.secondary-btn {
+  border: 1px solid #a855f7;
+  transition: all .4s ease;
+}
+
+.secondary-btn:hover {
+  background: rgba(168,85,247,.15);
+  border-color: #38bdf8;
+  box-shadow: 0 0 25px rgba(168,85,247,.2);
+  transform: translateY(-4px);
+}
+
+/* ==========================================
+   SERVICE CARD ANIMATIONS
+========================================== */
+
+.home-service-card,
+.service-row,
+.pricing-card,
+.value-card {
+  transition:
+    transform .45s cubic-bezier(.2,.8,.2,1),
+    border-color .4s ease,
+    box-shadow .4s ease,
+    background .4s ease;
+}
+
+.home-service-card:hover,
+.service-row:hover,
+.pricing-card:hover,
+.value-card:hover {
+  transform: translateY(-9px);
+  border-color: #a855f7;
+  box-shadow:
+    0 15px 45px rgba(168,85,247,.12),
+    0 0 20px rgba(56,189,248,.08);
+}
+
+.home-service-card:hover h3,
+.pricing-card:hover h3 {
+  color: #d5ff35;
+}
+
+/* Colourful service symbols */
+.service-symbol {
+  background: linear-gradient(135deg, #d5ff35, #38bdf8, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform .4s ease;
+}
+
+.home-service-card:hover .service-symbol {
+  transform: rotate(-10deg) scale(1.2);
+}
+
+/* ==========================================
+   PROJECT HOVER EFFECTS
+========================================== */
+
+.home-project-card,
+.home-project-card a {
+  transition: transform .4s ease;
+}
+
+.home-project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-art {
+  transition: transform .6s ease, filter .5s ease;
+}
+
+.home-project-card:hover .project-art {
+  transform: scale(1.025);
+  filter: saturate(1.3);
+}
+
+.project-art-one {
+  background: linear-gradient(135deg, #111827, #6d28d9, #ec4899) !important;
+}
+
+.project-art-two {
+  background: linear-gradient(135deg, #071b35, #075985, #22d3ee) !important;
+}
+
+.project-art-three {
+  background: linear-gradient(135deg, #17220c, #476b18, #d5ff35) !important;
+}
+
+.project-art-four {
+  background: linear-gradient(135deg, #29130d, #a34120, #ff9d42) !important;
+}
+
+/* ==========================================
+   PROCESS SECTION
+========================================== */
+
+.process-item {
+  transition: transform .35s ease, border-color .35s ease;
+}
+
+.process-item:hover {
+  transform: translateX(10px);
+}
+
+.process-item > span {
+  color: #d5ff35;
+  transition: color .3s ease;
+}
+
+.process-item:hover > span {
+  color: #ff4ecd;
+}
+
+/* ==========================================
+   FOUNDER PHOTO EFFECT
+========================================== */
+
+.home-founder-image,
+.founder-photo {
+  box-shadow: 0 15px 55px rgba(168,85,247,.10);
+  transition: box-shadow .5s ease, transform .5s ease;
+}
+
+.home-founder-image:hover,
+.founder-photo:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 20px 55px rgba(168,85,247,.2),
+    0 0 30px rgba(56,189,248,.12);
+}
+
+/* ==========================================
+   FINAL CTA
+========================================== */
+
+.home-cta,
+.about-cta,
+.contact-bottom,
+.pricing-note {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(168,85,247,.23), transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(56,189,248,.17), transparent 40%),
+    linear-gradient(135deg, #171323, #111a20) !important;
+  border: 1px solid rgba(168,85,247,.25);
+  transition: border-color .4s ease, box-shadow .4s ease;
+}
+
+.home-cta:hover,
+.about-cta:hover,
+.contact-bottom:hover,
+.pricing-note:hover {
+  border-color: rgba(213,255,53,.5);
+  box-shadow: 0 0 45px rgba(168,85,247,.10);
+}
+
+/* ==========================================
+   NAVIGATION HOVER
+========================================== */
+
+.site-nav a {
+  position: relative;
+  transition: color .3s ease;
+}
+
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #d5ff35, #a855f7);
+  transition: width .35s ease;
+}
+
+.site-nav a:hover::after,
+.site-nav a.active::after {
+  width: 100%;
+}
+
+/* ==========================================
+   SMOOTH SCROLL
+========================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
