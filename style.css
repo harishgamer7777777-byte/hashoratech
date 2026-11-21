@@ -1681,3 +1681,249 @@ img {
     font-size: 6rem;
   }
 }
+
+/* ==================================
+   HASHORATECH — PORTFOLIO PAGE
+================================== */
+
+.portfolio-hero {
+  min-height: 600px;
+  padding: 110px 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 80% 35%, rgba(185,154,255,.15), transparent 40%),
+    var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.portfolio-hero h1 {
+  font-size: clamp(4rem, 10vw, 9rem);
+  line-height: .95;
+  letter-spacing: -.09em;
+  margin: 30px 0;
+}
+
+.portfolio-hero h1 span {
+  color: var(--lime);
+}
+
+.portfolio-hero > p:not(.eyebrow) {
+  color: var(--muted);
+  max-width: 540px;
+  margin-bottom: 25px;
+}
+
+.portfolio-intro {
+  padding: 100px 10% 55px;
+}
+
+.portfolio-intro h2 {
+  font-size: clamp(2.8rem, 6vw, 6rem);
+  line-height: 1;
+  letter-spacing: -.07em;
+  margin-top: 25px;
+}
+
+.portfolio-intro h2 span {
+  color: var(--purple);
+}
+
+.portfolio-gallery {
+  padding: 30px 8% 110px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 55px 25px;
+}
+
+.portfolio-project {
+  min-width: 0;
+}
+
+.portfolio-art {
+  display: block;
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 13px;
+  transition: transform .35s ease;
+}
+
+.portfolio-art:hover {
+  transform: translateY(-7px);
+}
+
+.portfolio-art-content {
+  position: absolute;
+  inset: 30px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.portfolio-art-content > span,
+.portfolio-art-content > p {
+  font-size: .68rem;
+  letter-spacing: .15em;
+  font-weight: 800;
+}
+
+.portfolio-art-content h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: .86;
+  letter-spacing: -.09em;
+  font-weight: 900;
+}
+
+.portfolio-art-content h2 span {
+  color: var(--lime);
+}
+
+.portfolio-twin {
+  background: linear-gradient(135deg, #291b43, #9d77c9);
+  color: white;
+}
+
+.portfolio-art-orbit {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 50%;
+  right: -80px;
+  bottom: -120px;
+  transform: scaleX(.7) rotate(35deg);
+  box-shadow: 0 0 80px rgba(255,255,255,.2);
+}
+
+.portfolio-hashai {
+  background: linear-gradient(135deg, #112a27, #d5ff35);
+  color: #08080c;
+}
+
+.portfolio-ai-orb {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  font-size: 9rem;
+  font-weight: 900;
+  letter-spacing: -.12em;
+  opacity: .5;
+}
+
+.portfolio-terra {
+  background: linear-gradient(135deg, #4c2a1d, #e6a56c);
+  color: white;
+}
+
+.portfolio-terra-symbol {
+  position: absolute;
+  right: 35px;
+  bottom: -50px;
+  font-size: 20rem;
+  font-weight: 900;
+  line-height: 1;
+  opacity: .22;
+}
+
+.portfolio-sss {
+  background: linear-gradient(135deg, #172642, #6e96e8);
+  color: white;
+}
+
+.portfolio-sss-symbol {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 8rem;
+  font-weight: 900;
+  letter-spacing: -.12em;
+  opacity: .35;
+}
+
+.portfolio-info {
+  padding: 22px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.portfolio-info h3 {
+  margin: 9px 0 5px;
+  font-size: 1.55rem;
+}
+
+.portfolio-info > div > p:last-child {
+  color: var(--muted);
+  font-size: .88rem;
+  max-width: 370px;
+}
+
+.portfolio-info .eyebrow {
+  font-size: .65rem;
+}
+
+.project-link {
+  color: var(--lime);
+  font-size: .72rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.project-link:hover {
+  color: white;
+}
+
+.portfolio-cta {
+  padding: 110px 8%;
+  text-align: center;
+  background: radial-gradient(circle at 50% 100%, rgba(213,255,53,.12), transparent 60%);
+  border-top: 1px solid var(--line);
+}
+
+.portfolio-cta h2 {
+  font-size: clamp(3.5rem, 8vw, 7.5rem);
+  line-height: .95;
+  letter-spacing: -.08em;
+  margin: 25px 0 35px;
+}
+
+.portfolio-cta h2 span {
+  color: var(--lime);
+}
+
+@media(max-width: 750px) {
+  .portfolio-gallery {
+    grid-template-columns: 1fr;
+    padding: 20px 6% 75px;
+    gap: 30px;
+  }
+
+  .portfolio-art {
+    min-height: 300px;
+  }
+
+  .portfolio-hero {
+    min-height: 520px;
+    padding: 80px 7%;
+  }
+
+  .portfolio-intro {
+    padding: 75px 7% 40px;
+  }
+}
+
+@media(max-width: 430px) {
+  .portfolio-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portfolio-art-content {
+    inset: 22px;
+  }
+}
