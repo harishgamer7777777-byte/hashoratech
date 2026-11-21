@@ -6,413 +6,572 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>HASHORATECH | Innovate. Design. Dominate.</title>
-
-  <meta name="description" content="HASHORATECH creates modern websites, AI-powered solutions, branding and digital experiences.">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="HASHORATECH — premium website development, branding, graphic design and innovative digital solutions.">
+  <meta name="theme-color" content="#f8f3e9">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="header">
-    <nav class="navbar container">
-      <a href="#home" class="logo">
-        HASHORA<span>TECH</span><b>.</b>
-      </a>
+<header class="site-header">
+  <nav class="navbar">
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-        ☰
-      </button>
+    <a href="#home" class="brand">
+      <svg class="brand-mark" viewBox="0 0 60 60" aria-label="HASHORATECH H logo">
+        <circle cx="30" cy="30" r="26" fill="none" stroke="#bd9655" stroke-width="1.3"/>
+        <path d="M15 43 L24 15 L29 15 L25 28 L39 28 L43 15 L48 15 L39 45 L34 45 L38 33 L24 33 L20 45 Z"
+          fill="#a77b39"/>
+        <path d="M12 47 L46 10" stroke="#d7b77d" stroke-width="1.5"/>
+      </svg>
 
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact" class="nav-cta">Let's Talk ↗</a>
-      </div>
-    </nav>
-  </header>
+      <span class="brand-name">
+        HASHORA<span>TECH</span>
+        <small>INNOVATE. DESIGN. DOMINATE.</small>
+      </span>
+    </a>
 
-  <main>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
 
-    <!-- HERO SECTION -->
-    <section class="hero container" id="home">
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#demos">Live Demos</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact" class="nav-contact">Contact Us ↗</a>
+    </div>
 
-      <div class="hero-content">
-        <div class="availability">
-          <span class="status-dot"></span>
-          CREATIVE DIGITAL STUDIO
-        </div>
+  </nav>
+</header>
 
-        <h1>
-          We turn your ideas into
-          <span class="gradient-text">digital reality.</span>
-        </h1>
+<main>
 
-        <p>
-          From stunning websites to creative branding and intelligent
-          digital solutions, we help transform your vision into reality.
-        </p>
+<!-- HOME PAGE -->
 
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">
-            Explore Our Work ↗
-          </a>
+<section class="page hero-page" id="home">
 
-          <a href="#contact" class="btn btn-secondary">
-            Start a Project
-          </a>
-        </div>
+  <div class="hero-content">
+    <span class="eyebrow">✦ INNOVATE. DESIGN. DOMINATE.</span>
 
-        <div class="hero-tagline">
-          INNOVATE. DESIGN. DOMINATE.
-        </div>
-      </div>
+    <h1>
+      Empower Your Ideas
+      into <span>Digital Reality.</span>
+    </h1>
 
-      <div class="hero-visual">
-        <div class="hero-circle circle-one"></div>
-        <div class="hero-circle circle-two"></div>
+    <div class="gold-line"></div>
 
-        <div class="hero-main-card">
-          <span class="hero-h">H</span>
-          <span class="hero-brand">HASHORATECH</span>
-          <span class="hero-caption">CREATIVE TECHNOLOGY</span>
-        </div>
+    <p>
+      From stunning websites to creative branding and intelligent
+      digital solutions, we transform your ideas into meaningful
+      digital experiences.
+    </p>
 
-        <div class="floating-box floating-top">
-          ✦ Creative Design
-        </div>
+    <div class="hero-buttons">
+      <a href="#contact" class="button button-gold">Start a Project ↗</a>
+      <a href="#projects" class="button button-outline">Explore Our Work</a>
+    </div>
 
-        <div class="floating-box floating-bottom">
-          &lt;/&gt; Web Development
-        </div>
-      </div>
+    <div class="hero-tagline">
+      CREATIVE THINKING. SMART TECHNOLOGY. EXCEPTIONAL DESIGN.
+    </div>
+  </div>
 
-    </section>
+  <div class="hero-founder">
+    <div class="portrait-decoration"></div>
+    <img src="founder.jpg" alt="S.T. Harish Pandiyan, founder of HASHORATECH">
+    <div class="portrait-caption">
+      <span>THE VISION BEHIND THE BRAND</span>
+      <strong>S.T. Harish Pandiyan</strong>
+      <small>Founder · HASHORATECH</small>
+    </div>
+  </div>
 
-    <!-- BRAND STRIP -->
-    <section class="brand-strip">
-      <div class="container brand-items">
-        <span>WEB DEVELOPMENT</span>
-        <span>✦</span>
-        <span>CREATIVE DESIGN</span>
-        <span>✦</span>
-        <span>ARTIFICIAL INTELLIGENCE</span>
-        <span>✦</span>
-        <span>INNOVATION</span>
-      </div>
-    </section>
+</section>
 
-    <!-- ABOUT SECTION -->
-    <section class="section container" id="about">
+<!-- BRAND VALUES -->
 
-      <div class="section-heading">
-        <span class="section-label">01 / ABOUT HASHORATECH</span>
-        <h2>Technology meets <span>creativity.</span></h2>
-      </div>
+<section class="brand-values">
+  <span>CREATIVITY</span>
+  <span>✦</span>
+  <span>TECHNOLOGY</span>
+  <span>✦</span>
+  <span>INNOVATION</span>
+  <span>✦</span>
+  <span>EXCELLENCE</span>
+</section>
 
-      <div class="about-grid">
+<!-- ABOUT PAGE -->
 
-        <div class="about-image">
-          <!-- Replace founder.jpg with your actual photograph -->
-          <img src="founder.jpg" alt="Founder of HASHORATECH"
-               onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+<section class="page section" id="about">
 
-          <div class="photo-placeholder">
-            <span>YOUR PHOTO</span>
-            <small>Founder of HASHORATECH</small>
-          </div>
-        </div>
+  <div class="section-title">
+    <span class="eyebrow">01 — OUR STORY</span>
+    <h2>Beyond Ideas. <span>Beyond Limits.</span></h2>
+    <p>Discover the person and vision behind HASHORATECH.</p>
+  </div>
 
-        <div class="about-content">
-          <h3>Small beginnings. Big ambitions.</h3>
+  <div class="about-layout">
 
-          <p>
-            HASHORATECH is an emerging digital creative and technology
-            company focused on building meaningful digital experiences.
-          </p>
+    <div class="about-photo">
+      <img src="founder.jpg" alt="HASHORATECH founder portrait">
+      <span class="photo-label">THE FOUNDER</span>
+    </div>
 
-          <p>
-            We bring together design, technology and innovation to
-            help individuals, startups and businesses establish
-            their digital presence.
-          </p>
+    <div class="about-text">
+      <span class="eyebrow">MEET THE FOUNDER</span>
 
-          <div class="founder-details">
-            <div class="founder-avatar">HP</div>
-            <div>
-              <strong>S.T. Harish Pandiyan</strong>
-              <span>Founder & Creative Developer</span>
-            </div>
-          </div>
+      <h3>S.T. Harish Pandiyan</h3>
+      <h4>Founder & Creative Developer</h4>
 
-          <p class="small-note">
-            Building ideas into digital experiences.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section services-section" id="services">
-
-      <div class="container">
-        <div class="section-heading center">
-          <span class="section-label">02 / OUR SERVICES</span>
-          <h2>What we <span>create.</span></h2>
-          <p>Digital solutions designed to bring your ideas to life.</p>
-        </div>
-
-        <div class="services-grid">
-
-          <article class="service-card">
-            <div class="service-icon">⌘</div>
-            <span class="service-number">01</span>
-            <h3>Website Development</h3>
-            <p>Modern, responsive and professional websites for individuals and businesses.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">✦</div>
-            <span class="service-number">02</span>
-            <h3>Logo & Branding</h3>
-            <p>Distinctive logos and brand identities that make your business memorable.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">◈</div>
-            <span class="service-number">03</span>
-            <h3>Graphic Design</h3>
-            <p>Creative posters, banners and promotional graphics for your brand.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">✧</div>
-            <span class="service-number">04</span>
-            <h3>AI-powered Websites</h3>
-            <p>Intelligent digital experiences with useful AI-powered features.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">&lt;/&gt;</div>
-            <span class="service-number">05</span>
-            <h3>Web Applications</h3>
-            <p>Interactive web platforms designed around your requirements.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">▣</div>
-            <span class="service-number">06</span>
-            <h3>E-commerce Websites</h3>
-            <p>Online shopping experiences to showcase and sell your products.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section container" id="projects">
-
-      <div class="section-heading">
-        <span class="section-label">03 / OUR PROJECTS</span>
-        <h2>Explore our <span>work.</span></h2>
-        <p>Discover our websites, experiments and technology projects.</p>
-      </div>
-
-      <div class="projects-grid">
-
-        <article class="project-card">
-          <div class="project-art project-one">
-            <span class="project-count">01 / WEB EXPERIENCE</span>
-            <span class="project-letter">TM</span>
-          </div>
-          <div class="project-details">
-            <div>
-              <h3>Twin Melodies</h3>
-              <p>Interactive web experience</p>
-            </div>
-            <a href="https://twin-melodies-three.vercel.app"
-               target="_blank" rel="noopener noreferrer"
-               class="project-link">↗</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-art project-two">
-            <span class="project-count">02 / AI INNOVATION</span>
-            <span class="project-letter">AI</span>
-          </div>
-          <div class="project-details">
-            <div>
-              <h3>HashAI</h3>
-              <p>Artificial intelligence project</p>
-            </div>
-            <a href="https://hashai.lovable.app"
-               target="_blank" rel="noopener noreferrer"
-               class="project-link">↗</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-art project-three">
-            <span class="project-count">03 / ENGINEERING</span>
-            <span class="project-letter">TS</span>
-          </div>
-          <div class="project-details">
-            <div>
-              <h3>TerraScan</h3>
-              <p>Landmine detection drone concept</p>
-            </div>
-            <a href="https://terrascan1.lovable.app"
-               target="_blank" rel="noopener noreferrer"
-               class="project-link">↗</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-art project-four">
-            <span class="project-count">04 / BUSINESS WEBSITE</span>
-            <span class="project-letter">SSS</span>
-          </div>
-          <div class="project-details">
-            <div>
-              <h3>SSS Construction</h3>
-              <p>Construction business website</p>
-            </div>
-            <a href="https://sssconstruction.lovable.app"
-               target="_blank" rel="noopener noreferrer"
-               class="project-link">↗</a>
-          </div>
-        </article>
-
-      </div>
-
-      <p class="project-disclaimer">
-        Selected portfolio and experimental projects. Project status
-        and individual ownership should be confirmed before publication.
+      <p>
+        Welcome to HASHORATECH — a growing digital creative and
+        technology venture built around imagination, innovation
+        and a passion for creating.
       </p>
-    </section>
 
-    <!-- PRICING -->
-    <section class="section pricing-section" id="pricing">
+      <p>
+        Our focus is to turn ideas into practical digital experiences
+        through website development, creative branding, graphic
+        design and emerging technologies.
+      </p>
 
-      <div class="container">
-        <div class="section-heading center">
-          <span class="section-label">04 / OUR PRICING</span>
-          <h2>Simple. Flexible. <span>Affordable.</span></h2>
-          <p>Introductory starting prices. Final quotes depend on project requirements.</p>
-        </div>
+      <p>
+        We believe that every great digital product starts with
+        a simple idea and the determination to bring it to life.
+      </p>
 
-        <div class="pricing-grid">
-
-          <article class="price-card">
-            <span class="price-tag">STARTER</span>
-            <h3>Basic Website</h3>
-            <div class="price">₹1,999<span> / starting</span></div>
-            <p>For simple personal or portfolio websites.</p>
-            <a href="#contact" class="btn btn-secondary">Enquire Now ↗</a>
-          </article>
-
-          <article class="price-card featured-price">
-            <span class="price-tag">POPULAR</span>
-            <h3>Business Website</h3>
-            <div class="price">₹4,999<span> / starting</span></div>
-            <p>For businesses looking for a professional online presence.</p>
-            <a href="#contact" class="btn btn-primary">Enquire Now ↗</a>
-          </article>
-
-          <article class="price-card">
-            <span class="price-tag">ADVANCED</span>
-            <h3>Premium Website</h3>
-            <div class="price">₹9,999<span> / starting</span></div>
-            <p>For advanced websites with custom features.</p>
-            <a href="#contact" class="btn btn-secondary">Enquire Now ↗</a>
-          </article>
-
-        </div>
-
-        <p class="pricing-note">
-          Logo design, graphic design, e-commerce and custom web applications
-          are quoted separately. Hosting, domain and maintenance charges may apply.
-        </p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section container" id="contact">
-
-      <div class="contact-box">
-        <div class="contact-content">
-          <span class="section-label">05 / LET'S CONNECT</span>
-          <h2>Have an idea?<br><span>Let's build it.</span></h2>
-          <p>
-            Tell us about your next project. Let's turn your vision
-            into something amazing.
-          </p>
-        </div>
-
-        <div class="contact-links">
-          <a href="mailto:harishgamer7777777@gmail.com" class="contact-item">
-            <span>✉</span>
-            <div>
-              <small>EMAIL US</small>
-              <strong>harishgamer7777777@gmail.com</strong>
-            </div>
-          </a>
-
-          <a href="tel:+919600830100" class="contact-item">
-            <span>☎</span>
-            <div>
-              <small>CALL US</small>
-              <strong>+91 96008 30100</strong>
-            </div>
-          </a>
-
-          <a href="https://wa.me/919600830100?text=Hello%20HASHORATECH%2C%20I%20am%20interested%20in%20your%20services."
-             target="_blank" rel="noopener noreferrer"
-             class="btn btn-primary whatsapp-button">
-            Chat on WhatsApp ↗
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div>
-        <a href="#home" class="logo footer-logo">
-          HASHORA<span>TECH</span><b>.</b>
-        </a>
-        <p>Innovate. Design. Dominate.</p>
-      </div>
-
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div class="copyright">
-        © <span id="year"></span> HASHORATECH. All rights reserved.
+      <div class="founder-signature">
+        S.T. Harish Pandiyan
       </div>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+  </div>
+
+  <div class="photo-gallery">
+    <figure>
+      <img src="robotics.jpg" alt="Founder with a robotics project">
+      <figcaption>ROBOTICS & TECHNOLOGY</figcaption>
+    </figure>
+
+    <figure>
+      <img src="drone-exhibition.jpg" alt="Founder presenting a drone project">
+      <figcaption>DRONE INNOVATION</figcaption>
+    </figure>
+
+    <figure>
+      <img src="project-exhibition.jpg" alt="Founder at a technology exhibition">
+      <figcaption>PROJECT SHOWCASE</figcaption>
+    </figure>
+
+    <figure>
+      <img src="founder-gallery.jpg" alt="Founder portrait">
+      <figcaption>BEHIND THE BRAND</figcaption>
+    </figure>
+  </div>
+
+</section>
+
+<!-- SERVICES PAGE -->
+
+<section class="page section cream-section" id="services">
+
+  <div class="section-title">
+    <span class="eyebrow">02 — WHAT WE OFFER</span>
+    <h2>Our <span>Services.</span></h2>
+    <p>Thoughtful design and technology for ambitious ideas.</p>
+  </div>
+
+  <div class="service-grid">
+
+    <article class="service-card">
+      <span class="service-icon">⌘</span>
+      <span class="card-number">01</span>
+      <h3>Website Development</h3>
+      <p>Professional, responsive websites designed for individuals, startups and businesses.</p>
+      <a href="#contact">Enquire ↗</a>
+    </article>
+
+    <article class="service-card">
+      <span class="service-icon">✧</span>
+      <span class="card-number">02</span>
+      <h3>Logo & Branding</h3>
+      <p>Creative logos, brand identities and visual systems that make your business recognizable.</p>
+      <a href="#contact">Enquire ↗</a>
+    </article>
+
+    <article class="service-card">
+      <span class="service-icon">◈</span>
+      <span class="card-number">03</span>
+      <h3>Poster & Graphic Design</h3>
+      <p>Beautiful promotional posters, social media creatives and advertising designs.</p>
+      <a href="#contact">Enquire ↗</a>
+    </article>
+
+    <article class="service-card">
+      <span class="service-icon">✦</span>
+      <span class="card-number">04</span>
+      <h3>AI-powered Websites</h3>
+      <p>Smart web experiences with useful AI integrations and intelligent features.</p>
+      <a href="#contact">Enquire ↗</a>
+    </article>
+
+    <article class="service-card">
+      <span class="service-icon">&lt;/&gt;</span>
+      <span class="card-number">05</span>
+      <h3>Web Applications</h3>
+      <p>Interactive digital platforms and custom web applications built around your needs.</p>
+      <a href="#contact">Enquire ↗</a>
+    </article>
+
+    <article class="service-card">
+      <span class="service-icon">▣</span>
+      <span class="card-number">06</span>
+      <h3>E-commerce Websites</h3>
+      <p>Online stores with product displays, shopping experiences and business features.</p>
+      <a href="#contact">Enquire ↗</a>
+    </article>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS PAGE -->
+
+<section class="page section" id="projects">
+
+  <div class="section-title">
+    <span class="eyebrow">03 — SELECTED WORK</span>
+    <h2>Ideas Into <span>Reality.</span></h2>
+    <p>A collection of digital projects and technology experiments.</p>
+  </div>
+
+  <div class="project-grid">
+
+    <article class="project-card">
+      <div class="project-logo project-tm">
+        <svg viewBox="0 0 100 100" aria-label="Twin Melodies logo">
+          <path d="M20 25 Q50 5 80 25 M20 75 Q50 95 80 75"
+            fill="none" stroke="#a77b39" stroke-width="4"/>
+          <path d="M30 30 Q50 50 70 30 M30 70 Q50 50 70 70"
+            fill="none" stroke="#a77b39" stroke-width="3"/>
+          <circle cx="50" cy="50" r="7" fill="#a77b39"/>
+        </svg>
+        <strong>TWIN MELODIES</strong>
+      </div>
+      <div class="project-info">
+        <span>01 / WEB EXPERIENCE</span>
+        <h3>Twin Melodies</h3>
+        <p>An interactive digital experience.</p>
+        <a href="https://twin-melodies-three.vercel.app" target="_blank" rel="noopener">Explore Project ↗</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-logo project-ai">
+        <svg viewBox="0 0 100 100" aria-label="HashAI logo">
+          <circle cx="50" cy="50" r="34" fill="none" stroke="#a77b39" stroke-width="3"/>
+          <path d="M50 22 V78 M22 50 H78 M32 32 L68 68 M68 32 L32 68"
+            stroke="#a77b39" stroke-width="2"/>
+          <circle cx="50" cy="50" r="9" fill="#a77b39"/>
+        </svg>
+        <strong>HASH<span>AI</span></strong>
+      </div>
+      <div class="project-info">
+        <span>02 / AI INNOVATION</span>
+        <h3>HashAI</h3>
+        <p>An artificial intelligence project.</p>
+        <a href="https://hashai.lovable.app" target="_blank" rel="noopener">Explore Project ↗</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-logo project-terra">
+        <svg viewBox="0 0 100 100" aria-label="TerraScan logo">
+          <path d="M50 12 L83 32 V68 L50 88 L17 68 V32 Z"
+            fill="none" stroke="#a77b39" stroke-width="3"/>
+          <path d="M50 26 L68 59 H32 Z" fill="none" stroke="#a77b39" stroke-width="3"/>
+          <circle cx="50" cy="48" r="6" fill="#a77b39"/>
+        </svg>
+        <strong>TERRASCAN</strong>
+      </div>
+      <div class="project-info">
+        <span>03 / ENGINEERING</span>
+        <h3>TerraScan</h3>
+        <p>Landmine detection drone project.</p>
+        <a href="https://terrascan1.lovable.app" target="_blank" rel="noopener">Explore Project ↗</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-logo project-sss">
+        <svg viewBox="0 0 100 100" aria-label="SSS Construction logo">
+          <path d="M15 75 L50 20 L85 75 Z" fill="none" stroke="#a77b39" stroke-width="4"/>
+          <path d="M35 75 V51 H65 V75 M50 51 V75"
+            fill="none" stroke="#a77b39" stroke-width="3"/>
+        </svg>
+        <strong>SSS CONSTRUCTION</strong>
+      </div>
+      <div class="project-info">
+        <span>04 / BUSINESS WEBSITE</span>
+        <h3>SSS Construction</h3>
+        <p>A construction business website.</p>
+        <a href="https://sssconstruction.lovable.app" target="_blank" rel="noopener">Explore Project ↗</a>
+      </div>
+    </article>
+
+  </div>
+
+  <p class="disclaimer">
+    Portfolio projects include prototypes and experiments. Project ownership,
+    contribution and completion status should be confirmed before making
+    client-facing claims.
+  </p>
+
+</section>
+
+<!-- LIVE DEMOS PAGE -->
+
+<section class="page section cream-section" id="demos">
+
+  <div class="section-title">
+    <span class="eyebrow">04 — EXPLORE OUR DIGITAL WORK</span>
+    <h2>Experience Our <span>Live Demos.</span></h2>
+    <p>Open our trial websites and explore the work directly.</p>
+  </div>
+
+  <div class="demo-grid">
+
+    <a class="demo-card" href="https://twin-melodies-three.vercel.app" target="_blank" rel="noopener">
+      <div class="demo-symbol">♫</div>
+      <span>01 / INTERACTIVE EXPERIENCE</span>
+      <h3>Twin Melodies</h3>
+      <p>Explore the interactive website.</p>
+      <strong>VISIT LIVE DEMO ↗</strong>
+    </a>
+
+    <a class="demo-card" href="https://hashai.lovable.app" target="_blank" rel="noopener">
+      <div class="demo-symbol">✧</div>
+      <span>02 / ARTIFICIAL INTELLIGENCE</span>
+      <h3>HashAI</h3>
+      <p>Discover the AI-powered concept.</p>
+      <strong>VISIT LIVE DEMO ↗</strong>
+    </a>
+
+    <a class="demo-card" href="https://terrascan1.lovable.app" target="_blank" rel="noopener">
+      <div class="demo-symbol">⌖</div>
+      <span>03 / TECHNOLOGY</span>
+      <h3>TerraScan</h3>
+      <p>Discover the drone detection concept.</p>
+      <strong>VISIT LIVE DEMO ↗</strong>
+    </a>
+
+    <a class="demo-card" href="https://sssconstruction.lovable.app" target="_blank" rel="noopener">
+      <div class="demo-symbol">⌂</div>
+      <span>04 / BUSINESS</span>
+      <h3>SSS Construction</h3>
+      <p>Explore the business website.</p>
+      <strong>VISIT LIVE DEMO ↗</strong>
+    </a>
+
+  </div>
+
+</section>
+
+<!-- PRICING PAGE -->
+
+<section class="page section" id="pricing">
+
+  <div class="section-title">
+    <span class="eyebrow">05 — TRANSPARENT PRICING</span>
+    <h2>Premium Creativity. <span>Fair Pricing.</span></h2>
+    <p>Introductory prices to make professional digital services accessible.</p>
+  </div>
+
+  <div class="pricing-category">
+
+    <h3>Logo & Branding</h3>
+
+    <div class="price-grid">
+      <article class="price-card">
+        <span>BASIC LOGO</span>
+        <h4>₹499</h4>
+        <p>Simple logo concept and one design direction.</p>
+        <a href="#contact">Get Started ↗</a>
+      </article>
+
+      <article class="price-card featured">
+        <span>PROFESSIONAL LOGO</span>
+        <h4>₹999</h4>
+        <p>Custom logo concept with revisions and final files.</p>
+        <a href="#contact">Get Started ↗</a>
+      </article>
+
+      <article class="price-card">
+        <span>PREMIUM BRANDING</span>
+        <h4>₹1,999</h4>
+        <p>Logo, colour palette and basic brand guidelines.</p>
+        <a href="#contact">Get Started ↗</a>
+      </article>
+    </div>
+
+  </div>
+
+  <div class="pricing-category">
+
+    <h3>Graphic Design</h3>
+
+    <div class="price-grid">
+      <article class="price-card">
+        <span>POSTER DESIGN</span>
+        <h4>₹199</h4>
+        <p>One promotional or event poster.</p>
+        <a href="#contact">Order Now ↗</a>
+      </article>
+
+      <article class="price-card">
+        <span>SOCIAL MEDIA POST</span>
+        <h4>₹149</h4>
+        <p>One custom social media creative.</p>
+        <a href="#contact">Order Now ↗</a>
+      </article>
+
+      <article class="price-card">
+        <span>BANNER DESIGN</span>
+        <h4>₹399</h4>
+        <p>Custom digital banner design.</p>
+        <a href="#contact">Order Now ↗</a>
+      </article>
+    </div>
+
+  </div>
+
+  <div class="pricing-category">
+
+    <h3>Website Development</h3>
+
+    <div class="price-grid">
+      <article class="price-card">
+        <span>LANDING PAGE</span>
+        <h4>₹1,999</h4>
+        <p>Single-page responsive website.</p>
+        <a href="#contact">Get Started ↗</a>
+      </article>
+
+      <article class="price-card featured">
+        <span>BUSINESS WEBSITE</span>
+        <h4>₹4,999</h4>
+        <p>Professional multi-section business website.</p>
+        <a href="#contact">Get Started ↗</a>
+      </article>
+
+      <article class="price-card">
+        <span>PREMIUM WEBSITE</span>
+        <h4>₹9,999</h4>
+        <p>Custom website with advanced design and features.</p>
+        <a href="#contact">Get Started ↗</a>
+      </article>
+    </div>
+
+  </div>
+
+  <div class="pricing-category">
+    <h3>Advanced Solutions</h3>
+    <div class="custom-pricing">
+      <div>
+        <strong>E-commerce Websites</strong>
+        <span>Starting from ₹7,999</span>
+      </div>
+      <div>
+        <strong>Web Applications</strong>
+        <span>Custom quotation</span>
+      </div>
+      <div>
+        <strong>AI Integration</strong>
+        <span>Custom quotation</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="pricing-note">
+    Prices are introductory estimates, not binding quotations.
+    Final costs depend on scope, revisions, integrations, hosting,
+    domain, maintenance and other requirements.
+  </p>
+
+</section>
+
+<!-- CONTACT PAGE -->
+
+<section class="page section contact-section" id="contact">
+
+  <div class="contact-layout">
+
+    <div class="contact-heading">
+      <span class="eyebrow">06 — LET'S CONNECT</span>
+      <h2>Have an Idea?<br><span>Let's Create It.</span></h2>
+      <p>
+        Tell us about your vision. Whether you need a website,
+        a logo or a digital solution, let's discuss your project.
+      </p>
+    </div>
+
+    <div class="contact-details">
+
+      <a href="mailto:harishgamer7777777@gmail.com" class="contact-item">
+        <span>✉</span>
+        <div>
+          <small>EMAIL</small>
+          <strong>harishgamer7777777@gmail.com</strong>
+        </div>
+      </a>
+
+      <a href="tel:+919600830100" class="contact-item">
+        <span>☎</span>
+        <div>
+          <small>PHONE</small>
+          <strong>+91 96008 30100</strong>
+        </div>
+      </a>
+
+      <a href="https://wa.me/919600830100?text=Hello%20HASHORATECH%2C%20I%20would%20like%20to%20discuss%20a%20project."
+         target="_blank" rel="noopener" class="button button-gold">
+        Discuss Your Project on WhatsApp ↗
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+  <a href="#home" class="footer-brand">
+    HASHORA<span>TECH.</span>
+  </a>
+
+  <p>INNOVATE. DESIGN. DOMINATE.</p>
+
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <small>© <span id="year"></span> HASHORATECH. All rights reserved.</small>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
