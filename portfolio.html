@@ -4,143 +4,316 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the digital projects and creative work of HASHORATECH.">
-  <title>Our Work | HASHORATECH</title>
+
+  <!-- SEO -->
+  <title>Our Portfolio | Web Design & Digital Projects | HASHORATECH</title>
+
+  <meta name="description" content="Explore HASHORATECH projects and digital experiences, including interactive websites, AI-powered concepts, TerraScan and business website designs.">
+
+  <meta name="keywords" content="HASHORATECH portfolio, website design portfolio, web development projects, AI website projects, graphic design, digital projects">
+
+  <meta name="author" content="HASHORATECH">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://hashoratech.com/portfolio.html">
+  <meta name="theme-color" content="#080811">
+  <link rel="icon" type="image/png" href="hashoratech-logo.png">
+
+  <!-- SOCIAL PREVIEW -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Portfolio | HASHORATECH">
+  <meta property="og:description" content="Explore our selected digital projects, creative concepts and website experiences.">
+  <meta property="og:url" content="https://hashoratech.com/portfolio.html">
+  <meta property="og:image" content="https://hashoratech.com/hashoratech-logo.png">
+  <meta property="og:site_name" content="HASHORATECH">
+
+  <!-- STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "HASHORATECH Portfolio",
+    "url": "https://hashoratech.com/portfolio.html",
+    "description": "A collection of digital projects and website experiences by HASHORATECH.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "HASHORATECH",
+      "url": "https://hashoratech.com/"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Twin Melodies",
+          "url": "https://twin-melodies-three.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hash AI",
+          "url": "https://hashai.lovable.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "TerraScan",
+          "url": "https://terrascan1.lovable.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "SSS Construction",
+          "url": "https://sssconstruction.lovable.app/"
+        }
+      ]
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- NAVIGATION -->
 <header class="site-header">
-  <a class="logo" href="index.html">HASHORA<span>TECH</span></a>
-  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <a href="index.html" class="logo">HASHORA<span>TECH.</span></a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+
   <nav class="site-nav" id="siteNav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="service.html">Services</a>
-    <a class="active" href="portfolio.html">Portfolio</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
     <a href="pricing.html">Pricing</a>
-    <a class="nav-cta" href="contact.html">Work with us ↗</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
 
-<section class="portfolio-hero">
-  <p class="eyebrow">OUR WORK / SELECTED PROJECTS</p>
-  <h1>Ideas worth<br><span>experiencing.</span></h1>
+<!-- PORTFOLIO HERO -->
+<section class="portfolio-hero reveal">
+  <div class="section-tag">OUR CREATIVE UNIVERSE</div>
+
+  <h1>
+    Ideas become<br>
+    <span>digital experiences.</span>
+  </h1>
+
   <p>
-    A collection of digital experiences, creative concepts
-    and technology projects.
+    Explore selected projects, creative concepts and digital
+    experiences connected with our journey.
   </p>
-  <a href="#projects" class="text-link">EXPLORE PROJECTS ↓</a>
+
+  <a href="#projects" class="primary-btn">Explore projects ↓</a>
 </section>
 
-<section class="portfolio-intro">
-  <p class="eyebrow">MADE WITH CURIOSITY</p>
-  <h2>Every project starts<br>with a <span>possibility.</span></h2>
+<!-- INTRO -->
+<section class="portfolio-intro reveal">
+  <div class="section-tag">SELECTED WORK</div>
+
+  <h2>
+    Creativity in<br>
+    <span>every project.</span>
+  </h2>
+
+  <p>
+    Every project represents an opportunity to experiment,
+    learn and transform an idea into a digital experience.
+  </p>
 </section>
 
+<!-- PROJECT GALLERY -->
 <section class="portfolio-gallery" id="projects">
 
-  <article class="portfolio-project">
-    <a class="portfolio-art portfolio-twin" href="https://twin-melodies-three.vercel.app" target="_blank" rel="noopener">
-      <div class="portfolio-art-content">
-        <span>01 / DIGITAL EXPERIENCE</span>
-        <h2>TWIN<br>MELODIES<span>.</span></h2>
-        <p>EXPLORE ↗</p>
+  <!-- TWIN MELODIES -->
+  <article class="portfolio-project reveal">
+
+    <a href="https://twin-melodies-three.vercel.app/"
+       target="_blank" rel="noopener"
+       class="portfolio-project-link">
+
+      <div class="portfolio-art portfolio-art-one">
+        <span class="portfolio-art-label">01 / DIGITAL EXPERIENCE</span>
+        <div class="portfolio-art-title">
+          TWIN<br>MELODIES.
+        </div>
+        <span class="portfolio-art-bottom">EXPLORE THE EXPERIENCE ↗</span>
       </div>
-      <div class="portfolio-art-orbit"></div>
+
+      <div class="portfolio-info">
+        <div>
+          <span>WEBSITE EXPERIENCE</span>
+          <h2>Twin Melodies</h2>
+          <p>An interactive digital website experience.</p>
+        </div>
+        <span class="portfolio-arrow">↗</span>
+      </div>
+
     </a>
-    <div class="portfolio-info">
-      <div>
-        <p class="eyebrow">WEBSITE / CREATIVE</p>
-        <h3>Twin Melodies</h3>
-        <p>A creative web experience built around a distinctive visual concept.</p>
-      </div>
-      <a href="https://twin-melodies-three.vercel.app" target="_blank" rel="noopener" class="project-link">VIEW LIVE ↗</a>
-    </div>
   </article>
 
-  <article class="portfolio-project">
-    <a class="portfolio-art portfolio-hashai" href="https://hashai.lovable.app" target="_blank" rel="noopener">
-      <div class="portfolio-art-content">
-        <span>02 / AI EXPERIENCE</span>
-        <h2>HashAI<span>.</span></h2>
-        <p>EXPLORE ↗</p>
+  <!-- HASH AI -->
+  <article class="portfolio-project reveal">
+
+    <a href="https://hashai.lovable.app/"
+       target="_blank" rel="noopener"
+       class="portfolio-project-link">
+
+      <div class="portfolio-art portfolio-art-two">
+        <span class="portfolio-art-label">02 / ARTIFICIAL INTELLIGENCE</span>
+        <div class="portfolio-art-title">
+          HASH<br>AI.
+        </div>
+        <span class="portfolio-art-bottom">EXPLORE THE EXPERIENCE ↗</span>
       </div>
-      <div class="portfolio-ai-orb">AI</div>
+
+      <div class="portfolio-info">
+        <div>
+          <span>AI DIGITAL PROJECT</span>
+          <h2>Hash AI</h2>
+          <p>An AI-powered digital project and experience.</p>
+        </div>
+        <span class="portfolio-arrow">↗</span>
+      </div>
+
     </a>
-    <div class="portfolio-info">
-      <div>
-        <p class="eyebrow">ARTIFICIAL INTELLIGENCE</p>
-        <h3>HashAI</h3>
-        <p>An AI-focused digital concept exploring intelligent experiences.</p>
-      </div>
-      <a href="https://hashai.lovable.app" target="_blank" rel="noopener" class="project-link">VIEW LIVE ↗</a>
-    </div>
   </article>
 
-  <article class="portfolio-project">
-    <a class="portfolio-art portfolio-terra" href="https://terrascan1.lovable.app" target="_blank" rel="noopener">
-      <div class="portfolio-art-content">
-        <span>03 / TECHNOLOGY PROJECT</span>
-        <h2>TERRA<br>SCAN<span>.</span></h2>
-        <p>EXPLORE ↗</p>
+  <!-- TERRASCAN -->
+  <article class="portfolio-project reveal">
+
+    <a href="https://terrascan1.lovable.app/"
+       target="_blank" rel="noopener"
+       class="portfolio-project-link">
+
+      <div class="portfolio-art portfolio-art-three">
+        <span class="portfolio-art-label">03 / INNOVATION PROJECT</span>
+        <div class="portfolio-art-title">
+          TERRA<br>SCAN.
+        </div>
+        <span class="portfolio-art-bottom">EXPLORE THE EXPERIENCE ↗</span>
       </div>
-      <div class="portfolio-terra-symbol">T</div>
+
+      <div class="portfolio-info">
+        <div>
+          <span>TECHNOLOGY PROJECT</span>
+          <h2>TerraScan</h2>
+          <p>A landmine detection project showcase.</p>
+        </div>
+        <span class="portfolio-arrow">↗</span>
+      </div>
+
     </a>
-    <div class="portfolio-info">
-      <div>
-        <p class="eyebrow">DRONE / ENGINEERING</p>
-        <h3>TerraScan</h3>
-        <p>A landmine detection drone concept using multiple sensing technologies.</p>
-      </div>
-      <a href="https://terrascan1.lovable.app" target="_blank" rel="noopener" class="project-link">VIEW LIVE ↗</a>
-    </div>
   </article>
 
-  <article class="portfolio-project">
-    <a class="portfolio-art portfolio-sss" href="https://sssconstruction.lovable.app" target="_blank" rel="noopener">
-      <div class="portfolio-art-content">
-        <span>04 / BUSINESS WEBSITE</span>
-        <h2>SSS<br>CONSTRUCTION<span>.</span></h2>
-        <p>EXPLORE ↗</p>
+  <!-- SSS CONSTRUCTION -->
+  <article class="portfolio-project reveal">
+
+    <a href="https://sssconstruction.lovable.app/"
+       target="_blank" rel="noopener"
+       class="portfolio-project-link">
+
+      <div class="portfolio-art portfolio-art-four">
+        <span class="portfolio-art-label">04 / BUSINESS WEBSITE</span>
+        <div class="portfolio-art-title">
+          BUILD<br>BETTER.
+        </div>
+        <span class="portfolio-art-bottom">EXPLORE THE EXPERIENCE ↗</span>
       </div>
-      <div class="portfolio-sss-symbol">SSS</div>
+
+      <div class="portfolio-info">
+        <div>
+          <span>BUSINESS WEBSITE</span>
+          <h2>SSS Construction</h2>
+          <p>A digital website concept for a construction business.</p>
+        </div>
+        <span class="portfolio-arrow">↗</span>
+      </div>
+
     </a>
-    <div class="portfolio-info">
-      <div>
-        <p class="eyebrow">BUSINESS / WEB DESIGN</p>
-        <h3>SSS Construction</h3>
-        <p>A digital website concept for a construction business.</p>
-      </div>
-      <a href="https://sssconstruction.lovable.app" target="_blank" rel="noopener" class="project-link">VIEW LIVE ↗</a>
-    </div>
   </article>
 
 </section>
 
-<section class="portfolio-cta">
-  <p class="eyebrow">YOUR PROJECT COULD BE NEXT</p>
-  <h2>Let's build<br><span>something original.</span></h2>
-  <a href="contact.html" class="lime-button">START YOUR PROJECT ↗</a>
+<!-- PROJECT APPROACH -->
+<section class="portfolio-approach reveal">
+
+  <div class="section-tag">OUR CREATIVE APPROACH</div>
+
+  <h2>
+    Every detail<br>
+    <span>has a purpose.</span>
+  </h2>
+
+  <div class="portfolio-approach-grid">
+
+    <article>
+      <span>01</span>
+      <h3>Purpose</h3>
+      <p>Understand the idea and the problem it aims to solve.</p>
+    </article>
+
+    <article>
+      <span>02</span>
+      <h3>Creativity</h3>
+      <p>Explore visual concepts and engaging experiences.</p>
+    </article>
+
+    <article>
+      <span>03</span>
+      <h3>Technology</h3>
+      <p>Bring concepts to life through digital tools.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="portfolio-cta reveal">
+
+  <div class="section-tag">HAVE SOMETHING IN MIND?</div>
+
+  <h2>
+    Your idea could be<br>
+    <span>our next project.</span>
+  </h2>
+
+  <p>Let's create a digital experience worth remembering.</p>
+
+  <a href="contact.html" class="primary-btn">Start your project ↗</a>
+
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  <a class="logo" href="index.html">HASHORA<span>TECH</span></a>
+
+  <a href="index.html" class="logo">HASHORA<span>TECH.</span></a>
+
   <p>Innovate. Design. Dominate.</p>
-  <div class="footer-nav">
+
+  <div class="footer-links">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="service.html">Services</a>
+    <a href="pricing.html">Pricing</a>
     <a href="contact.html">Contact</a>
     <a href="terms.html">Terms</a>
   </div>
-  <p>© <span id="year">2026</span> HASHORATECH. All rights reserved.</p>
+
+  <p>© <span id="year"></span> HASHORATECH. All rights reserved.</p>
+
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
