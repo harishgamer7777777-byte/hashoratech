@@ -4,177 +4,182 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore HASHORATECH digital services including web development, logo design and creative branding.">
-  <title>Our Services | HASHORATECH</title>
+  <meta name="description" content="Explore HASHORATECH website development, branding, graphic design and AI solutions.">
+  <title>Services | HASHORATECH</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
-  <a href="index.html" class="brand">
-    <svg viewBox="0 0 50 50" width="43" height="43">
-      <path d="M8 7 V43 M8 25 L32 7 M8 25 L32 43"
-        fill="none" stroke="#c9a45c" stroke-width="5"
-        stroke-linecap="round"/>
-      <path d="M38 8 V42 M38 25 H46"
-        fill="none" stroke="#fff" stroke-width="4"/>
-    </svg>
-    <span>HASHORA<span class="gold">TECH</span></span>
-  </a>
-
-  <nav class="nav-links">
+<header class="site-header">
+  <a class="logo" href="index.html">HASHORA<span>TECH</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  <nav class="site-nav" id="siteNav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="services.html" class="active">Services</a>
+    <a class="active" href="services.html">Services</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="pricing.html">Pricing</a>
-    <a href="contact.html" class="nav-button">Let's Talk ↗</a>
+    <a class="nav-cta" href="contact.html">Work with us ↗</a>
   </nav>
 </header>
 
 <main>
+  <section class="services-hero">
+    <p class="eyebrow">WHAT WE CREATE / 01—06</p>
+    <h1>We turn bold<br>ideas into <span>digital reality.</span></h1>
+    <p class="hero-copy">
+      From your first logo to a complete digital platform,
+      we create experiences that help ideas move forward.
+    </p>
+    <a href="#service-list" class="text-link">EXPLORE OUR SERVICES ↓</a>
+  </section>
 
-<section class="page-hero">
-  <p class="eyebrow">WHAT WE OFFER</p>
-  <h1>Our <span class="gold">Services</span></h1>
-  <p>Creative digital solutions designed to make your ideas stand out.</p>
-</section>
+  <section class="services-intro">
+    <p class="eyebrow">OUR APPROACH</p>
+    <h2>Not just good-looking.<br><span>Built to make an impact.</span></h2>
+    <p>
+      We combine thoughtful design, modern technology and
+      practical problem-solving to create digital products
+      that work beautifully.
+    </p>
+  </section>
 
-<section class="services-section section">
+  <section class="service-list" id="service-list">
 
-  <div class="service-grid">
-
-    <article class="service-card">
-      <span>01 / DEVELOPMENT</span>
-      <div class="service-icon">⌘</div>
-      <h3>Website Development</h3>
-      <p>
-        Professional, responsive and modern websites
-        designed to establish your online presence.
-      </p>
-      <ul>
-        <li>Business websites</li>
-        <li>Personal portfolios</li>
-        <li>Landing pages</li>
-        <li>Responsive layouts</li>
-      </ul>
-      <a href="pricing.html">View Packages →</a>
+    <article class="service-row">
+      <div class="service-number">01</div>
+      <div class="service-main">
+        <p class="eyebrow">DIGITAL DEVELOPMENT</p>
+        <h2>Website<br><span>Development</span></h2>
+        <p>Responsive, modern websites designed around your brand and business goals.</p>
+        <ul>
+          <li>Business websites</li>
+          <li>Landing pages</li>
+          <li>Portfolio websites</li>
+          <li>Responsive web design</li>
+        </ul>
+      </div>
+      <div class="service-art art-web">
+        <div class="browser-art">
+          <div class="browser-dots">● ● ●</div>
+          <div class="browser-lines"></div>
+          <div class="browser-block"></div>
+        </div>
+      </div>
+      <a class="service-arrow" href="contact.html">↗</a>
     </article>
 
-    <article class="service-card">
-      <span>02 / BRANDING</span>
-      <div class="service-icon">✳</div>
-      <h3>Logo Design</h3>
-      <p>
-        Unique visual identities that communicate your
-        brand's personality and purpose.
-      </p>
-      <ul>
-        <li>Minimalist logos</li>
-        <li>Business logos</li>
-        <li>Brand marks</li>
-        <li>Logo variations</li>
-      </ul>
-      <a href="pricing.html">View Packages →</a>
+    <article class="service-row">
+      <div class="service-number">02</div>
+      <div class="service-main">
+        <p class="eyebrow">VISUAL IDENTITY</p>
+        <h2>Logo &<br><span>Branding</span></h2>
+        <p>Distinctive visual identities that make your brand memorable.</p>
+        <ul>
+          <li>Logo creation</li>
+          <li>Brand identity systems</li>
+          <li>Colour and typography</li>
+          <li>Brand assets</li>
+        </ul>
+      </div>
+      <div class="service-art art-brand">
+        <div class="brand-symbol">H<span>.</span></div>
+        <p>MAKE YOUR MARK.</p>
+      </div>
+      <a class="service-arrow" href="contact.html">↗</a>
     </article>
 
-    <article class="service-card">
-      <span>03 / GRAPHICS</span>
-      <div class="service-icon">▧</div>
-      <h3>Graphic Design</h3>
-      <p>
-        Eye-catching graphics that communicate your
-        message professionally.
-      </p>
-      <ul>
-        <li>Posters</li>
-        <li>Banners</li>
-        <li>Flyers</li>
-        <li>Promotional creatives</li>
-      </ul>
-      <a href="pricing.html">View Packages →</a>
+    <article class="service-row">
+      <div class="service-number">03</div>
+      <div class="service-main">
+        <p class="eyebrow">CREATIVE DESIGN</p>
+        <h2>Poster &<br><span>Graphics</span></h2>
+        <p>Eye-catching creative designs for campaigns, events and social media.</p>
+        <ul>
+          <li>Promotional posters</li>
+          <li>Social media creatives</li>
+          <li>Event banners</li>
+          <li>Marketing graphics</li>
+        </ul>
+      </div>
+      <div class="service-art art-graphics">
+        <div class="graphic-card">CREATE.<br><span>INSPIRE.</span></div>
+      </div>
+      <a class="service-arrow" href="contact.html">↗</a>
     </article>
 
-    <article class="service-card">
-      <span>04 / SOCIAL MEDIA</span>
-      <div class="service-icon">◎</div>
-      <h3>Social Media Design</h3>
-      <p>
-        Attractive content to help your business
-        build a consistent digital identity.
-      </p>
-      <ul>
-        <li>Instagram posts</li>
-        <li>Story designs</li>
-        <li>Social media banners</li>
-        <li>Creative advertisements</li>
-      </ul>
-      <a href="pricing.html">View Packages →</a>
+    <article class="service-row">
+      <div class="service-number">04</div>
+      <div class="service-main">
+        <p class="eyebrow">NEXT-GEN EXPERIENCES</p>
+        <h2>AI-powered<br><span>Websites</span></h2>
+        <p>Useful AI experiences that make digital products smarter and more engaging.</p>
+        <ul>
+          <li>AI chat interfaces</li>
+          <li>Intelligent web experiences</li>
+          <li>AI integrations</li>
+          <li>Custom AI concepts</li>
+        </ul>
+      </div>
+      <div class="service-art art-ai">
+        <div class="ai-orbit">AI</div>
+      </div>
+      <a class="service-arrow" href="contact.html">↗</a>
     </article>
 
-    <article class="service-card">
-      <span>05 / E-COMMERCE</span>
-      <div class="service-icon">◇</div>
-      <h3>E-commerce Websites</h3>
-      <p>
-        Online storefronts designed to showcase
-        products and support online enquiries.
-      </p>
-      <ul>
-        <li>Product catalogues</li>
-        <li>Shopping interfaces</li>
-        <li>Storefront design</li>
-        <li>Order enquiry integration</li>
-      </ul>
-      <a href="contact.html">Discuss Project →</a>
+    <article class="service-row">
+      <div class="service-number">05</div>
+      <div class="service-main">
+        <p class="eyebrow">CUSTOM SOFTWARE</p>
+        <h2>Web<br><span>Applications</span></h2>
+        <p>Interactive browser-based applications built for specific needs.</p>
+        <ul>
+          <li>Interactive dashboards</li>
+          <li>Custom web tools</li>
+          <li>Data-driven interfaces</li>
+          <li>Application prototypes</li>
+        </ul>
+      </div>
+      <div class="service-art art-app">
+        <div class="app-window">
+          <div></div><div></div><div></div>
+        </div>
+      </div>
+      <a class="service-arrow" href="contact.html">↗</a>
     </article>
 
-    <article class="service-card">
-      <span>06 / CUSTOM SOLUTIONS</span>
-      <div class="service-icon">✧</div>
-      <h3>Custom Web Solutions</h3>
-      <p>
-        Tailor-made digital experiences built
-        around your specific requirements.
-      </p>
-      <ul>
-        <li>Interactive websites</li>
-        <li>Web applications</li>
-        <li>Custom interfaces</li>
-        <li>Special project development</li>
-      </ul>
-      <a href="contact.html">Discuss Project →</a>
+    <article class="service-row">
+      <div class="service-number">06</div>
+      <div class="service-main">
+        <p class="eyebrow">ONLINE BUSINESS</p>
+        <h2>E-commerce<br><span>Websites</span></h2>
+        <p>Online storefronts that present products clearly and make shopping easier.</p>
+        <ul>
+          <li>Product catalogues</li>
+          <li>Shopping experiences</li>
+          <li>Storefront design</li>
+          <li>Payment integration planning</li>
+        </ul>
+      </div>
+      <div class="service-art art-shop">
+        <div class="shop-bag">SHOP<br><span>ONLINE</span></div>
+      </div>
+      <a class="service-arrow" href="contact.html">↗</a>
     </article>
 
-  </div>
-</section>
+  </section>
 
-<section class="cta section">
-  <p class="eyebrow">READY TO GET STARTED?</p>
-  <h2>Let's Build Your <span class="gold">Next Big Idea.</span></h2>
-  <p>Tell us what you have in mind. We'll help bring it to life.</p>
-  <a href="contact.html" class="primary-btn">Start Your Project ↗</a>
-</section>
-
+  <section class="services-cta">
+    <p class="eyebrow">HAVE AN IDEA?</p>
+    <h2>Let's make<br><span>something matter.</span></h2>
+    <a href="contact.html" class="big-cta">START A PROJECT ↗</a>
+  </section>
 </main>
 
-<footer class="footer">
-  <a href="index.html" class="footer-brand">
-    HASHORA<span class="gold">TECH</span>
-  </a>
+<footer class="site-footer">
+  <a class="logo" href="index.html">HASHORA<span>TECH</span></a>
   <p>Innovate. Design. Dominate.</p>
-
-  <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="terms.html">Terms</a>
-  </div>
-
-  <p class="copyright">
-    © 2026 HASHORATECH. All Rights Reserved.
-  </p>
+  <p>© <span id="year">2026</span> HASHORATECH. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
